@@ -1,0 +1,202 @@
+body{
+    background: rgb(242, 245, 253);
+}
+
+main{
+    display: flex;
+}
+
+header{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+h1{
+    color: rgb(33, 33, 112);
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+#texto{
+    border: none;
+    background: rgb(242, 245, 253);
+    font-size: 25px;
+}
+
+#izquierda{
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+.encriptar{
+    background: rgb(33, 33, 112);
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 1s;
+}
+
+.encriptar:hover{
+background: rgb(202, 207, 178);
+}
+
+.encriptar:active{
+    background: rgba(32, 99, 2, 0.808);
+}
+
+.desencriptar{
+    background: rgb(220, 226, 241);
+    margin-left: 20px;
+    width: 250px;
+    height: 50px;
+    color: rgb(112, 126, 167);
+    font-size: 20px;
+    border-color: rgb(112, 126, 167);
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 1s;
+    }
+
+.desencriptar:hover{
+    background: rgb(202, 207, 178);
+    color: white;
+   }
+
+   .desencriptar:active{
+    background: rgba(32, 99, 2, 0.808);
+}
+
+#izquierda p{
+    font-size: 15px;
+    color: rgb(54, 53, 53);
+}
+
+#derecha{
+    margin-left: 25%;
+    margin-top: -20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.muñeco{
+    margin-top: 30%;
+    width: 80%;
+    height: auto;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+#derecha p{
+    font-size: 15px;
+    color: darkslategrey;
+}
+
+#resultado{
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.copiar{
+    background: rgb(220, 226, 241);
+    width: 250px;
+    height: 50px;
+    color: rgb(112, 126, 167);
+    font-size: 20px;
+    border-color: rgb(112, 126, 167);
+    border-radius: 10px;
+    border-width: 1px;
+    transition: 1s;
+    display: none;
+}
+
+.copiar:hover{
+    background: rgb(211, 224, 145);
+    color: white;
+   }
+
+   .copiar:active{
+    background: rgba(32, 99, 2, 0.808);
+}
+
+footer{
+    text-align: center;
+    line-height: 0.5;
+    color: rgb(33, 33, 112);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 770px){
+    main{
+        display: block;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    #derecha{
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-right: 60px;
+        text-align: center;
+    }
+
+    .copiar{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        display: block;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    #izquierda{
+        margin-left: 5px;
+        width:80%;
+    }
+    
+    #texto{
+        width: auto;
+        font-size: 20px;
+    }
+
+    .botones{
+        margin-left: 30px;
+    }
+
+    .encriptar{
+        margin-bottom: 20px;
+    }
+
+    .desencriptar{
+        margin-left: -2px;
+    }
+
+    #derecha{
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-right: 60px;
+        text-align: center;
+    }
+
+    .copiar{
+        margin-left: 8%;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
